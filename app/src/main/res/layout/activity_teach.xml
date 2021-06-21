@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tkustaff.game.Teach"
+    android:background="@mipmap/background"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="786dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1">
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView"
+                android:layout_marginTop="37dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="35dp"
+                android:layout_weight="1"
+                android:text="遊戲教學"
+                android:textSize="30dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginRight="120dp"></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/set"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+
+
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="63dp"
+                android:layout_weight="1"
+                android:background="@mipmap/set" />
+
+            <Button
+                android:id="@+id/home"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+
+
+                android:layout_marginStart="63dp"
+                android:layout_weight="1"
+                android:background="@mipmap/main2" />
+
+            <Button
+                android:id="@+id/teach"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="61dp"
+                android:layout_weight="1"
+                android:background="@mipmap/teach2" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

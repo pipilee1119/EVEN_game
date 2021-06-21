@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tkustaff.game.MainActivity"
+    android:background="@mipmap/background">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="395dp"
+        android:layout_height="68dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="113dp"
+            android:layout_height="match_parent"
+            android:text="@string/score"
+            android:textSize="32dp" />
+
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="136dp"
+            android:layout_height="match_parent"
+            android:textSize="32dp"
+            android:textColor="#E33539"/>
+    </LinearLayout>
+
+    <com.example.tkustaff.game.GameView
+        android:id="@+id/GameView"
+        android:layout_width="249dp"
+        android:layout_height="249dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="89dp"
+        android:layout_weight="1"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.109"></com.example.tkustaff.game.GameView>
+
+    <Button
+        android:id="@+id/OK"
+        android:onClick="okk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="415dp"
+        android:visibility="invisible"
+        tools:ignore="OnClick" />
+
+</android.support.constraint.ConstraintLayout>

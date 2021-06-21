@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tkustaff.game.Even_Game"
+    android:id="@+id/layout"
+    android:background="@mipmap/background">
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/play"
+        android:onClick="onselect" />
+
+
+    <Button
+        android:id="@+id/fb"
+android:onClick="sounddd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="90dp"
+        android:background="@mipmap/fb" />
+
+    <Button
+        android:id="@+id/score"
+android:onClick="score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fb"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:background="@mipmap/score" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        app:srcCompat="@mipmap/logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fb"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/set"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+
+
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="63dp"
+                android:layout_weight="1"
+                android:background="@mipmap/set" />
+
+            <Button
+                android:id="@+id/home"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+
+                android:layout_centerVertical="true"
+                android:layout_marginStart="63dp"
+
+
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:background="@mipmap/main" />
+
+            <Button
+                android:id="@+id/teach"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="61dp"
+                android:layout_weight="1"
+                android:background="@mipmap/teach" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
